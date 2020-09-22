@@ -7,6 +7,11 @@ python:
 
 env:
     matrix:
+        include:
+        - PYTHONASYNCIODEBUG=1
+        - PYTHONASYNCIODEBUG=
+        #power_jobs
+        arch: ppc64le
         - PYTHONASYNCIODEBUG=1
         - PYTHONASYNCIODEBUG=
 
