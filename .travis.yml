@@ -37,9 +37,9 @@ matrix:
             - PYTHONASYNCIODEBUG=
             - DB=mysql
             - DBTAG=5.7
-         #power_jobs
-         - python: 3.6
-           env:
+    # power jobs 
+        - python: 3.6
+          env:
             - PYTHONASYNCIODEBUG=
             - DB=mariadb
             - DBTAG=5.5
@@ -51,9 +51,8 @@ matrix:
             - DBTAG=10.0
           addons:
               mariadb: '10.0'
-          arch: ppc64le  
-        - python: 3.6
           arch: ppc64le
+        - python: 3.6
           env:
             - PYTHONASYNCIODEBUG=
             - DB=mariadb
@@ -65,7 +64,6 @@ matrix:
             - DB=mysql
             - DBTAG=5.7
           arch: ppc64le
-
 
 #before_script:
 #    - "mysql -e 'SELECT VERSION()'"
