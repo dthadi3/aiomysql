@@ -39,31 +39,32 @@ matrix:
             - DBTAG=5.7
          #power_jobs
          - python: 3.6
-           arch: ppc64le
-          env:
+           env:
             - PYTHONASYNCIODEBUG=
             - DB=mariadb
             - DBTAG=5.5
-        - python: 3.6
           arch: ppc64le
+        - python: 3.6
           env:
             - PYTHONASYNCIODEBUG=1
             - DB=mariadb
             - DBTAG=10.0
           addons:
               mariadb: '10.0'
+          arch: ppc64le  
         - python: 3.6
           arch: ppc64le
           env:
             - PYTHONASYNCIODEBUG=
             - DB=mariadb
             - DBTAG=10.5
-        - python: 3.6
           arch: ppc64le
+        - python: 3.6
           env:
             - PYTHONASYNCIODEBUG=
             - DB=mysql
             - DBTAG=5.7
+          arch: ppc64le
 
 
 #before_script:
